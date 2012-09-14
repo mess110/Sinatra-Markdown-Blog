@@ -7,6 +7,6 @@
     %script{ :src => 'http://code.jquery.com/jquery.min.js', :type => 'text/javascript' }
     %link{ :href => 'http://fonts.googleapis.com/css?family=Pacifico|Noticia+Text|Bree+Serif', :rel => 'stylesheet', :type => 'text/css' }
     %link{ :href => '/images/favicon.png', :rel => 'icon', :type => 'image/png'}
-    = yield_content :head
+    %link{:rel => 'stylesheet', :href => '/stylesheets/index.css', :type => 'text/css'}
   %body
     = yield
