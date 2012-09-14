@@ -1,18 +1,20 @@
 secret.rb
 
-# Logs and databases #
-######################
+# Logs and databases
 *.log
 *.sql
 *.sqlite
 *.sqlite3
 
-# Compiled stylesheets #
-######################
+# Compiled stylesheets
 *.sassc
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 Icon
 Thumbs.db
+
+# Editor specific files
+*.swp
+*.swo
+*~
