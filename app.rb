@@ -6,7 +6,6 @@ require 'sinatra/reloader' if development?
 require 'haml'
 require 'sass'
 require 'rdiscount'
-require 'nokogiri'
 
 require './helpers'
 
