@@ -14,7 +14,7 @@ get '/' do
 end
 
 get '/:article' do
-  @content = RDiscount.new( File.open("contents/" + params["article"].gsub("-", "_").concat(".md")).read ).to_html
+  @content = RDiscount.new( File.open("contents/" + params["article"].concat(".md")).read ).to_html
   @title = params["article"]
   haml :article
 end

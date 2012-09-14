@@ -13,6 +13,6 @@ Hello world!
 [![Funky Business](/images/contents/logo.png "alt text")](/)
 
 ## Header2 
-- *14/09/2012* [Article Title](/article-link) 
+- *14/09/2012* [Article Title](/article_link) 
 
 *Italic*
