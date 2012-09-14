@@ -9,8 +9,8 @@ require 'rdiscount'
 require 'nokogiri'
 
 get '/' do
-  @index = RDiscount.new( File.open("contents/index.md").read ).to_html
-  haml :index
+  @content = RDiscount.new( File.open("contents/index.md").read ).to_html
+  haml :article
 end
 
 get '/:article' do
