@@ -8,18 +8,20 @@ require 'sass'
 require 'rdiscount'
 require 'nokogiri'
 
+require './helpers'
+
 get '/' do
-  @content = RDiscount.new( File.open("contents/index.md").read ).to_html
+  @content = read_markdown("index")
   haml :article
 end
 
 get '/:article' do
-  @content = RDiscount.new( File.open("contents/" + params["article"].concat(".md")).read ).to_html
+  @content = read_markdown(params["article"])
   @title = params["article"]
   haml :article
 end
   
 get '/stylesheets/*' do
   content_type 'text/css'
-  sass '../styles/'.concat(params[:splat].join.chomp('.css')).to_sym
+  sass to_css params[:splat]
 end
