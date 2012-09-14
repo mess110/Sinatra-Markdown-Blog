@@ -1,7 +1,6 @@
 # encoding: UTF-8
 
 require 'sinatra'
-require 'sinatra/content_for'
 require 'sinatra/reloader' if development?
 require 'haml'
 require 'sass'
