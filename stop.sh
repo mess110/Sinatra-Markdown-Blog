@@ -1,0 +1,1 @@
+rvmsudo thin stop
